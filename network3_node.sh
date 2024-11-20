@@ -114,7 +114,7 @@ while true; do
 
             # Update packages
             process_notification "Обновляем пакеты (Updating packages)..."
-            run_commands "sudo apt update && sudo apt upgrade -y && apt install tar net-tools"
+            run_commands "sudo apt update && sudo apt upgrade -y && apt install tar net-tools iptables"
 
             process_notification "Создаем папку (Creating Dir)..."
             run_commands "mkdir -p $HOME/network3 && cd $HOME/network3"
